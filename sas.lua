@@ -417,9 +417,7 @@ UIGradient.Transparency=NumberSequence.new({NumberSequenceKeypoint.new(0,NV.
 Value),NumberSequenceKeypoint.new(1,1)})end)Tween.Completed:Once(function()TC:
 Disconnect()NV:Destroy()end)UIGradient.Rotation=-90 UIGradient.Parent=Frame end
 shared.DarkOverlay=DarkOverlay DarkOverlay.Parent=game:GetService('CoreGui')
-local imageData=SecureRequest:HttpGet('https://example.com/file/Overlay.png'
-)writefile('sg_overlay.png',imageData)InformationDrawing.Image=getcustomasset(
-'sg_overlay.png')InformationDrawing.BackgroundTransparency=1 InformationDrawing.
+writefile('sg_overlay.png','')InformationDrawing.Image='rbxassetid://0'InformationDrawing.BackgroundTransparency=1 InformationDrawing.
 ZIndex=1001 InformationDrawing.Parent=DarkOverlay StatusText.Text='Loading...'
 StatusText.TextSize=24 StatusText.Font=Enum.Font.SourceSansLight StatusText.
 TextColor3=Color3.new(1,1,1)StatusText.BackgroundTransparency=1 StatusText.
